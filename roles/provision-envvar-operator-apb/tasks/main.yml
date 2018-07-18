@@ -1,0 +1,17 @@
+- name: create deployment config
+  k8s_extensions_v1beta1_deployment:
+   name: envvar-operator
+   namespace: '{{ namespace }}'
+   labels:
+     app: envvar-operator
+   replicas: 1
+   spec_template_metadata_labels:
+     app: event-gateway
+     service: http-source
+   containers:
+   - env:
+     image: docker.io/streamzi/environment-variable-operator:latest # replace with your application image
+     name: http-source
+     ports:
+     - container_port: 8081
+       protocol: TCP
