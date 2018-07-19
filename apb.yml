@@ -5,7 +5,7 @@ bindable: False
 async: optional
 metadata:
   displayName: Environment Variable Operator
-  imageUrl: "https://raw.githubusercontent.com/sjwoodman/env-var-apb/operator/icon.svg?sanitize=true"
+  imageUrl: "https://raw.githubusercontent.com/sjwoodman/env-var-apb/master/icon.svg?sanitize=true"
   providerDisplayName: "Red Hat, Inc."
 plans:
   - name: default
