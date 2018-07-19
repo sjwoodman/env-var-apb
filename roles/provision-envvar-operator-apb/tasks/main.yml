@@ -6,8 +6,7 @@
      app: envvar-operator
    replicas: 1
    spec_template_metadata_labels:
-     app: event-gateway
-     service: http-source
+     app: envvar-operator
    containers:
    - env:
      image: docker.io/streamzi/environment-variable-operator:latest # replace with your application image

@@ -29,7 +29,7 @@
 ## When removing a Deployment Config, OpenShift will automatically clean up
 ## its associated resources like replication controllers and pods
 ##############################################################################
-#- openshift_v1_deployment_config:
-#    name: event-gateway
-#    namespace: '{{ namespace }}'
-#    state: absent
+- openshift_v1_deployment_config:
+    name: envvar-operator
+    namespace: '{{ namespace }}'
+    state: absent
